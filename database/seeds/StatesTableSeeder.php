@@ -4136,6 +4136,6 @@ public function run()
 		array('name' => "Matabeleland South",'country_id' => 246),
 		array('name' => "Midlands",'country_id' => 246)
 		);
-DB::table('states')->insert($states);
+		DB::table('states')->insert($states);
 }
 }

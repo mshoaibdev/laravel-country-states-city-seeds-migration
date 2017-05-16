@@ -13,13 +13,11 @@ class CreateStatesTable extends Migration
      */
     public function up()
     {
-        //
         Schema::create('states', function (Blueprint $table) {
-        $table->increments('id')->index();
-        $table->string('name');
-        $table->integer('country_id');            
-        $table->timestamps();
-    });
+            $table->increments('id')->index();
+            $table->string('name');
+            $table->integer('country_id');            
+        });
     }
 
     /**
@@ -29,7 +27,6 @@ class CreateStatesTable extends Migration
      */
     public function down()
     {
-        //
         Schema::dropIfExists('states');
     }
 }
